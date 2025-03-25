@@ -27,6 +27,9 @@
   .bg-tertiary {
     background-color: var(--background-tertiary);
   }
+  .bg-accent-purple {
+    background-color: var(--accent-purple);
+  }
   .text-body {
     color: var(--content-body);
   }
