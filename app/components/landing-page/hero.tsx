@@ -1,11 +1,13 @@
+import ProjectCard from "../commons/project-card";
 import UserCard from "../commons/user-card";
 import Button from "../ui/button";
 import TextInput from "../ui/text-input";
+import Header from "./header";
 
 export default function Hero() {
   return (
     <div className="flex h-screen">
-      <div className="w-full flex flex-col gap-2 mt-[35vh]">
+      <div className="w-full flex flex-col gap-2 mt-[35vh]  transform -translate-x-[10%]">
         <h1 className="text-5xl font-bold text-white leading-[64px]">
           Seus projetos e redes sociais em um único link
         </h1>
@@ -24,8 +26,12 @@ export default function Hero() {
         <div className="relative">
           <UserCard />
           <div className="absolute -bottom-[7%] -right-[45%]"></div>
-          <div className="absolute top-[20%] -left-[45%] -z-10"></div>
-          <div className="absolute top-[5%] -left-[55%] -z-10"></div>
+          <div className="absolute top-[20%] -left-[45%] -z-10">
+            <ProjectCard />
+          </div>
+          <div className="absolute top-[-8%] -left-[55%] -z-10">
+            <ProjectCard />
+          </div>
         </div>
       </div>
     </div>
