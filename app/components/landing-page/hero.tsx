@@ -2,12 +2,11 @@ import ProjectCard from "../commons/project-card";
 import UserCard from "../commons/user-card";
 import Button from "../ui/button";
 import TextInput from "../ui/text-input";
-import Header from "./header";
 
 export default function Hero() {
   return (
-    <div className="flex h-screen">
-      <div className="w-full flex flex-col gap-2 mt-[35vh]  transform -translate-x-[10%]">
+    <div className="flex h-screen ">
+      <div className="w-full flex flex-col gap-2 mt-[35vh] ">
         <h1 className="text-5xl font-bold text-white leading-[64px]">
           Seus projetos e redes sociais em um único link
         </h1>
