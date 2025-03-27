@@ -2,6 +2,8 @@ import Image from "next/image";
 import Hero from "./components/landing-page/hero";
 import Header from "./components/landing-page/header";
 import VideoExplanation from "./components/landing-page/video-explanation";
+import Pricing from "./components/landing-page/pricing";
+import Faq from "./components/landing-page/faq";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Header />
       <Hero />
       <VideoExplanation />
+      <Pricing />
+      <Faq />
     </div>
   );
 }
