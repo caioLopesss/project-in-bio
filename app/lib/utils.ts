@@ -5,6 +5,15 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function sanitizeLink(link?: string) {
+  if (!link) return "";
+
+  return link
+    .replace(/\s/g, "")
+    .replace(/[!@#$%^&*()_+\-=\[\]{};':"\\|,ˆ.<>\/?]+/, "")
+    .toLocaleLowerCase();
+}
+
 const TRIAL_DAYS = 3;
 const PRICE = formatarParaReal(9.9);
 const VITALICE = formatarParaReal(99.9);
